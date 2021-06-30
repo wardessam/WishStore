@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Wish Store</string>
+    <string name="Q1prompt">What is Your Favorite Color</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Categories">
+        <item>Health&amp; Beauty</item>
+        <item>Home&amp; Kitchen</item>
+        <item>TVs</item>
+        <item>Phones</item>
+        <item>Supermarket</item>
+        <item>Toys</item>
+    </string-array>
+    <string-array name="question1">
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Gray</item>
+        <item>Orange</item>
+        <item>Pink</item>
+    </string-array>
+</resources>

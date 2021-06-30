@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:id="@+id/proImg"
+    android:src="@drawable/picture"
+   />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/proName"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:text="Product Name"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/proPrice"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Product Price"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/Addonemore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.683"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/quantity"
+            app:layout_constraintVertical_bias="0.551" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ss"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/minusonemore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/quantity"
+            app:layout_constraintVertical_bias="0.551" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Add to cart"
+        android:onClick="storeImg"
+        android:id="@+id/AddToCart"
+        android:textSize="12dp"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
